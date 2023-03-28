@@ -7,7 +7,7 @@ info:
   x-cortex-tag: dr3
   x-cortex-type: service
   x-cortex-owners:
-     - type: EMAIl
+     - type: EMAIL
        email: cloud9_tribe@tavisca.com
      - name: cloud9
        type: GROUP
