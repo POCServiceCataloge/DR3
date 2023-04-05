@@ -1,13 +1,37 @@
 openapi: 3.0.1
 info:
   title: Dr3
+  x-cortex-apm:
+    dynatrace:
+      entityNameMatchers:
+      - flights-engine-web-nextgen-app-deployment-*
   x-cortex-git:
     github:
-      repository: TaviscaSolutions/DR3
+      repository: POCServiceCataloge/DR3
+  x-cortex-k8s:
+    deployment:
+    - identifier: flight-apis/flights-engine-web-nextgen-app-deployment
   x-cortex-tag: dr3
+  x-cortex-link:
+  - url: https://confluence.cxloyalty.com/display/EN/Service+Catalog
+    name: 'Confluence '
+    type: DOCUMENTATION
+  - url: https://jira.cxloyalty.com/secure/RapidBoard.jspa?rapidView=2007&projectKey=CLOUD9SC&selectedIssue=CLOUD9SC-71
+    name: Scrum Board
+    type: DOCUMENTATION
+  x-cortex-slos:
+    dynatrace:
+    - id: 1e937882-e2d2-3803-971e-82ef28df24a3
   x-cortex-type: service
+  x-cortex-issues:
+    jira:
+      projects:
+      - App Hosting
   x-cortex-owners:
-     - type: EMAIL
-       email: cloud9_tribe@tavisca.com
-     - name: cloud9
-       type: GROUP
+  - type: EMAIL
+    email: cloud9_tribe@tavisca.com
+  - name: cloud9
+    type: GROUP
+  x-cortex-dependency: []
+  x-cortex-custom-integration-mappings:
+  - cluster-proportional-autoscaler-amd64:1.7.1
