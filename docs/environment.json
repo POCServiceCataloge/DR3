@@ -1,0 +1,16 @@
+{
+  "environments": [
+    {
+      "baseUrl": "https://virtual-card-api.qa.cnxloyalty.com",
+      "type": "qa"
+    },
+    {
+      "baseUrl": "https://virtual-card-api.stage.cnxloyalty.com",
+      "type": "stage"
+    },
+    {
+      "baseUrl": "https://virtual-card-api.cnxloyalty.com",
+      "type": "prod"
+    }
+  ]
+}
